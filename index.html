@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KhalidAbdela Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1cec2a0b11.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <img class="logo" src="images/TracedLogoKA copy 2.png" alt="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <i class="fa-solid fa-x" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section">
+        <div class="hero-section-intro">
+          <div class="self-intro">
+            <div class="self-intro-content">
+              <p>Hi, my name is</p>
+              <h1 id="intro-name">Khalid Abdela.</h1>
+              <h2 id="intro-role">ENGINEERING STUDENT</h2>
+            </div>
+          </div>
+          <div class="self-image-section">
+            <div id="self-image-frame">
+              <img
+                class="headshot-image"
+                src="images/croppedPFP copy.png"
+                alt="self-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-section-contact">
+          <div class="hero-button-group">
+            <a href="images/KHALIDABDELA_resume copy.docx" id="cv-button"
+              >Download CV</a
+            >
+            <a href="mailto:khalid.abdela04@gmail.com" id="contact-button">
+              Get in touch <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="hero-icons">
+            <a href="https://www.linkedin.com/in/khalid-abdela"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-section">
+        <p>Get To Know More</p>
+        <h1>About Me</h1>
+        <div class="section-container">
+          <div class="section-pic-container">
+            <img
+              src="images/PFP-about.png"
+              alt="Profile Picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-container">
+              <div class="details-container">
+                <h3>Education</h3>
+                <p>
+                  The University of Queensland <br />Bachelor of Engineering
+                  (Honours) / Master of Engineering
+                </p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                cum pariatur rem quia ducimus saepe temporibus facere culpa
+                laborum! Laborum nobis qui aut harum vero veritatis recusandae?
+                Facere, architecto! Corrupti veniam suscipit id, labore vitae
+                delectus, commodi alias cum animi eum dolores eaque cumque
+                impedit? Ex libero nostrum voluptatum laudantium!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-section">
+        <p>Dive Into</p>
+        <h1>My Projects</h1>
+      </section>
+
+      <section id="contact-section">
+        <div class="contact-container">
+          <div class="contact-form-container">
+            <div class="contact-info">
+              <h3 class="title">Let's get in touch</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Mollitia quae nostrum labore perspiciatis eos ad iure obcaecati
+                delectus adipisci at explicabo, hic tenetur eius nulla accusamus
+                reiciendis error atque nihil?
+              </p>
+
+              <div class="info">
+                <div class="information">
+                  <i class="fa-solid fa-location-dot contact-icon"></i>
+                  <p>Brisbane, QLD</p>
+                </div>
+                <div class="information">
+                  <i class="fa-solid fa-envelope contact-icon"></i>
+                  <p>khalid.abdela04@gmail.com</p>
+                </div>
+                <div class="information">
+                  <i class="fa-solid fa-phone contact-icon"></i>
+                  <p>0411 915 895</p>
+                </div>
+              </div>
+
+              <div class="social-media">
+                <p>Connect with me :</p>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/khalid-abdela"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <span class="circle one"></span>
+              <span class="circle two"></span>
+
+              <form action="index.html" name="submit-to-google-sheet">
+                <h3 class="contact-form-title">Contact me</h3>
+                <div class="input-container">
+                  <input type="text" name="name" class="input" />
+                  <label for="">Name</label>
+                  <span>Name</span>
+                </div>
+                <div class="input-container">
+                  <input type="email" name="email" class="input" />
+                  <label for="">Email</label>
+                  <span>Email</span>
+                </div>
+                <div class="input-container">
+                  <input type="tel" name="phone" class="input" />
+                  <label for="">Phone</label>
+                  <span>Phone</span>
+                </div>
+                <div class="input-container textarea">
+                  <textarea name="message" class="input"></textarea>
+                  <label for="">Message</label>
+                  <span>Message</span>
+                </div>
+                <input type="submit" value="Send" class="contact-submit-btn" />
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

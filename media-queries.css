@@ -1,0 +1,173 @@
+/* Different width ranges */
+/* Phones: 320px to 600px */
+/* Tablets: 600px to 1024px */
+/* Desktops/laptops: 1024px to 1440px */
+
+
+/* media Query Nav */
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nav-links li a {
+        color: white;
+        top: 20px;
+        
+    } 
+
+    .nav-links li a::before {
+        background: #fff;
+        opacity: 0.8;
+    }
+
+    .nav-links li a:hover::before {
+        width: 250px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #131310;
+        position: fixed;
+        right: -350px;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 10001;
+        transition: right 1.3s;
+        box-shadow: rgba(0, 0, 0, 0.9) -20px 0px 40px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 35px 7px;
+        width: 100%;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 35px;
+        left: 27px;
+        color: white;
+    }
+
+    .fa-solid {
+        cursor: pointer;
+        transition: color 1.2s;
+    }
+
+    nav ul .fa-x:hover {
+        color: rgb(192, 191, 191);
+    }
+
+    /* extras */
+    .hero-section-intro p {
+        font-size: 20px;
+    }
+
+    #intro-name {
+        font-size: 40px;
+        color: rgb(50, 48, 48);
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    #intro-role {
+        font-size: 20px;
+    }
+    .hero-section-intro {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact section */
+
+@media (max-width: 850px) {
+    .contact-form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info:before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+
+    .contact-form:before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+
+    .square {
+        transform: translate(140%, 43%);
+        height: 350px;
+    }
+
+    .text {
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    .social-media {
+        padding: 1.5rem 0 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 1.5rem;
+    }
+
+    .contact-info::before {
+        display: none;
+    }
+
+    form, .conact-info {
+        padding: 1.7rem 1.6rem;
+    }
+
+    .text, .information, .social-media p {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 1.15rem;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .contact-icon {
+        width: 23px;
+    }
+
+    .input-container {
+        padding: 0.45rem 1.2rem;
+    }
+
+    .contact-submit-btn {
+        padding: 0.45rem 1.2rem;
+    }
+
+
+}
+
