@@ -105,13 +105,11 @@ nav .fa-solid {
 
     #self-image-frame {
         position: relative;
+        height: 200px;
         margin: auto;
         display: block;
         top: 0;
-    }
-
-    #self-image-frame {
-        height: 200px;
+        animation: spin-shadow 4s linear infinite; /* Apply the animation */
     }
 
     .headshot-image {
