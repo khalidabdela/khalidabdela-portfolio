@@ -5,7 +5,7 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
   this.setTimeout(function() {
     loader.classList.add("hidden");
-  }, 3500); // slight delay in order to have splash screen playout
+  }, 3000); // slight delay in order to have splash screen playout
 });
 
 

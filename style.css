@@ -161,7 +161,8 @@ nav li a:hover::before {
     height: 250px;
     object-fit: contain;
     position: absolute;
-    margin: 50 auto;
+    top: 140px;
+    left: 16px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: rgb(255, 228, 148) 10px 20px 20px -10px;
@@ -215,7 +216,6 @@ nav li a:hover::before {
 
 .hero-section-contact {
     position: relative;
-    justify-content: center;
     height: 23vh;
     display: flex;
     flex-direction: column;
@@ -301,7 +301,7 @@ nav li a:hover::before {
     height: 100vh;
     text-align: center;
     color: #000000;
-    padding-top: 30px;    
+    padding-top: 3px;    
 }
 
 .section-container {
