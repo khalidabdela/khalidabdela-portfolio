@@ -161,6 +161,11 @@ nav .fa-solid {
         margin-bottom: 2rem;
         margin-top: 4rem;
     }
+
+    .text-container p {
+        margin: 1.5rem 0 2rem 0;
+        padding: 2.3rem 2.2rem;
+    }
 }
 
 
