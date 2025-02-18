@@ -1,3 +1,12 @@
+// splash screen
+
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+})
+
+
 
 // hamburger menu
 var sidemenu = document.querySelector(".nav-links");
