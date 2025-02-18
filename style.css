@@ -161,8 +161,7 @@ nav li a:hover::before {
     height: 250px;
     object-fit: contain;
     position: absolute;
-    top: 140px;
-    left: 16px;
+    margin: 50 auto;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: rgb(255, 228, 148) 10px 20px 20px -10px;
