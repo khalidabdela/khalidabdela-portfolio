@@ -215,6 +215,7 @@ nav li a:hover::before {
 
 .hero-section-contact {
     position: relative;
+    justify-content: center;
     height: 23vh;
     display: flex;
     flex-direction: column;
