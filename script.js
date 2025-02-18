@@ -3,8 +3,10 @@
 var loader = document.getElementById("preloader");
 
 window.addEventListener("load", function(){
-  loader.style.display = "none";
-})
+  this.setTimeout(function() {
+    loader.style.display = "none";
+  }, 3500); // slight delay in order to have splash screen playout
+});
 
 
 
