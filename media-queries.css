@@ -3,18 +3,24 @@
 /* Tablets: 600px to 1024px */
 /* Desktops/laptops: 1024px to 1440px */
 
+/* pixel breakpoints
+ - < 600px
+ - 601px to 768px
+ - 769px to 992px
+ - 993px to 1200px
+ - > 1200px
+*/
 
 /* media Query Nav */
 nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 650px) {
-
+@media only screen and (max-width: 600px) {
+    /* Navigation */
     .nav-links li a {
         color: white;
         top: 20px;
-        
     } 
 
     .nav-links li a::before {
@@ -66,9 +72,9 @@ nav .fa-solid {
         color: rgb(192, 191, 191);
     }
 
-    /* extras */
+    /* hero section */
     .hero-section-intro p {
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     #intro-name {
@@ -79,22 +85,17 @@ nav .fa-solid {
     }
 
     #intro-role {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
-}
-
-
-/* trial hero-section */
-
-@media (max-width: 650px) {
     .hero-section-intro {
         height: 60vh;
         flex-direction: column;
+        padding-top: 3rem;
     }
 
     .self-intro-content {
-        top: 1.1rem;
+        top: 4rem;
         right: 0;
         left: 0;
         display: flex;
@@ -131,11 +132,8 @@ nav .fa-solid {
         justify-content: center;
         flex: 2;
     }
-}
 
-/* trial About section */
-
-@media (max-width: 650px) {
+    /* About section */
     #about-section {
         height: 125vh;  
         padding-top: 0;
@@ -167,10 +165,184 @@ nav .fa-solid {
     }
 }
 
+@media only screen and (min-width: 601px) and (max-width: 768px) {  
+        /* hero section */
+
+        .hero-section-intro p {
+            font-size: 1.5rem;
+        }
+    
+        #intro-name {
+            font-size: 4rem;
+            color: rgb(50, 48, 48);
+            margin: 0 1rem;
+        }
+    
+        #intro-role {
+            font-size: 2rem;
+        }
+    
+        .hero-section-intro {
+            height: 65vh;
+            flex-direction: column;
+            padding-top: 6rem;
+        }
+    
+        .self-intro-content {
+            top: 1.1rem;
+            right: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        #self-image-frame {
+            position: relative;
+            height: 250px;
+            width: 250px;
+            margin: 50 auto;
+            display: block;
+            top: 0;
+            left: 0;
+            animation: spin-shadow 4s linear infinite; /* Apply the animation */
+        }
+    
+        .headshot-image {
+            height: 300px;
+        }
+    
+        .self-intro {
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+    
+        .self-image-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 2;
+        }
+
+
+        .hero-section-contact {
+            height: 20vh;
+        }
+    
+        /* About section */
+        #about-section {
+            height: 80vh;  
+            margin-top: 1.2rem;
+        }
+    
+        .section-container {
+            flex-direction: column;
+            gap: 0;
+            margin-top: -2.95rem;
+        }
+    
+        .section-pic-container img {
+            position: relative;
+            margin: auto;
+            display: block;
+            height: 400px;
+            top: 0;
+        }
+    
+        .about-container {
+            margin-bottom: 2rem;
+            margin-top: 4rem;
+        }
+    
+        .text-container p {
+            padding-top: 2rem;
+            margin: 0 auto;
+        }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    /* Hero section */
+
+    #hero-section {
+        height: 92vh;
+    }
+
+    .self-intro {
+        flex: 1.5;
+        margin-top: -5%;
+    }
+    
+    .self-intro-content {
+        position: absolute;
+        right: 12px;
+        top: 210px;
+    }
+
+    .hero-section-intro p {
+        font-size: 1.1rem;
+    }
+
+    #self-image-frame {
+        margin-top: -17%;
+    }
+
+    #intro-name {
+        font-size: 3.5rem;
+        margin: -0.9rem 0;
+    }
+
+    #intro-role {
+        font-size: 1.6rem;
+    }
+
+    /* About section */
+
+    #about-section {
+        height: 125vh;  
+        padding-top: 0;
+        margin-top: -0.8rem;
+    }
+
+    .section-container {
+        flex-direction: column;
+        gap: 0;
+        margin-top: -2.95rem;
+    }
+
+    .section-pic-container img {
+        position: relative;
+        margin: auto;
+        display: block;
+        height: 400px;
+        top: 0;
+    }
+
+    .about-container {
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+    }
+
+    .text-container p {
+        padding-top: 2rem;
+        margin: 0 auto;
+    }
+}
+
+/*
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    
+
+}
+*/
 
 /* Contact section */
 
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
     .contact-form-container {
         grid-template-columns: 1fr;
     }
@@ -201,5 +373,3 @@ nav .fa-solid {
         padding: 1.5rem 0 0 0;
     }
 }
-
-
