@@ -1,7 +1,6 @@
 // splash screen
 
 window.addEventListener("load", () => {
-
   this.setTimeout(function() {
     const loader = document.querySelector(".loader");
 

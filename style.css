@@ -346,6 +346,11 @@ nav li a:hover::before {
     position: relative;
 }
 
+.details-container hr{
+    margin: auto;
+    width: 50%;
+}
+
 .about-container {
     margin-bottom: 2rem;
     margin-top: 100px;
