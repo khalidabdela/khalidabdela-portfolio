@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
   
     loader.addEventListener("transitionend", () => {
       document.body.removeChild("loader");
-    })  }, 2000); // slight delay in order to have splash screen playout
+    })}, 2000); // slight delay in order to have splash screen playout
 });
 
 
