@@ -1,13 +1,16 @@
 // splash screen
 
-var loader = document.getElementById("preloader");
+window.addEventListener("load", () => {
 
-window.addEventListener("load", function(){
   this.setTimeout(function() {
-    loader.classList.add("hidden");
-  }, 3000); // slight delay in order to have splash screen playout
-});
+    const loader = document.querySelector(".loader");
 
+    loader.classList.add("loader-hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild("loader");
+    })  }, 2000); // slight delay in order to have splash screen playout
+});
 
 
 // hamburger menu
