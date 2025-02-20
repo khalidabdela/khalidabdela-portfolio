@@ -188,9 +188,6 @@ nav li a:hover::before {
     overflow: hidden;
     box-shadow: rgb(255, 228, 148) 10px 20px 20px -10px;
     transition: box-shadow 2s ease-out;
-}
-
-#self-image-frame:hover {
     animation: spin-shadow 4s linear infinite; /* Apply the animation */
 }
 

@@ -167,9 +167,7 @@ nav .fa-solid {
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {  
         /* hero section */
-        #hero-section {
-            background-color: red;
-        }
+
 
         .hero-section-intro p {
             font-size: 1.5rem;
