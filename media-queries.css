@@ -272,12 +272,7 @@ nav .fa-solid {
     /* Hero section */
 
     #hero-section {
-        height: 88vh;
-        background-color: rgb(248, 177, 177);
-    }
-
-    .hero-section-intro {
-        background-color: rgb(246, 202, 246);
+        height: 86vh;
     }
 
     .self-intro {
@@ -340,12 +335,12 @@ nav .fa-solid {
     }
 }
 
-/*
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-    
+    #hero-section {
+        background-color: blue;
+    }
 
 }
-*/
 
 /* Contact section */
 
