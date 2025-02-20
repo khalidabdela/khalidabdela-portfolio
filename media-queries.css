@@ -272,7 +272,7 @@ nav .fa-solid {
     /* Hero section */
 
     #hero-section {
-        height: 86vh;
+        height: 82vh;
     }
 
     .self-intro {
@@ -336,10 +336,36 @@ nav .fa-solid {
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-    #hero-section {
-        background-color: blue;
+    /* Hero section */
+
+    .self-intro {
+        flex: 1.5;
     }
 
+    #self-image-frame {
+        left: 20%;
+    }
+
+    /* About section */
+    #about-section {
+        height: 70vh;  
+    }
+
+    .text-container p {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .section-pic-container {
+        flex: 4;
+        height: 40vh;
+    }
+
+    .section-pic-container img{
+        height: 110%;
+        top: -8rem;
+        background-color: red;
+    }
 }
 
 /* Contact section */
