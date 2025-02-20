@@ -305,7 +305,7 @@ nav .fa-solid {
     /* About section */
 
     #about-section {
-        height: 70vh;  
+        height: 75vh;  
         padding-top: 0;
         margin-top: -0.8rem;
     }
@@ -364,7 +364,6 @@ nav .fa-solid {
     .section-pic-container img{
         height: 110%;
         top: -8rem;
-        background-color: red;
     }
 }
 
