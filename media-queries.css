@@ -323,7 +323,6 @@ nav .fa-solid {
        }
 
        .section-pic-container {
-        background-color: aqua;
         height: 100%;
        }
 
@@ -368,7 +367,6 @@ nav .fa-solid {
     #about-section {
         min-height: 50vh;
         height: 100%;
-        background-color: bisque;  
     }
 
     .section-container {
