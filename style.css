@@ -370,6 +370,7 @@ nav li a:hover::before {
 /* --------------- Projects section ----------------- */
 
 #projects-section {
+    position: relative;
     height: 90vh;
     background: hsl(0, 2%, 9%);
     color: white;
