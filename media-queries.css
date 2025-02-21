@@ -241,7 +241,6 @@ nav .fa-solid {
     
         /* About section */
         #about-section {
-            background-color:rgb(170, 203, 204);
             min-height: 75vh;
             height: 100%;
             margin-top: 10%;
@@ -292,7 +291,13 @@ nav .fa-solid {
     /* Hero section */
 
     #hero-section {
-        height: 82vh;
+        min-height: 82vh;
+        height: 100%;
+        background-color: bisque;
+    }
+
+    .hero-section-intro {
+        background-color: aliceblue;
     }
 
     .self-intro {
@@ -310,7 +315,7 @@ nav .fa-solid {
     }
 
     #self-image-frame {
-        margin-top: 9%;
+        margin-top: 0%;
     }
 
     #intro-name {
