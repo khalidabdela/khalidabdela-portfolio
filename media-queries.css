@@ -167,20 +167,22 @@ nav .fa-solid {
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {  
         /* hero section */
-
+        #hero-section {
+            height: 85vh;
+        }
 
         .hero-section-intro p {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
         }
     
         #intro-name {
-            font-size: 4rem;
+            font-size: 3rem;
             color: rgb(50, 48, 48);
             margin: 0 1rem;
         }
     
         #intro-role {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     
         .hero-section-intro {
@@ -190,7 +192,8 @@ nav .fa-solid {
         }
     
         .self-intro-content {
-            top: 1.1rem;
+            position: relative;
+            top: 0;
             right: 0;
             left: 0;
             display: flex;
@@ -200,13 +203,11 @@ nav .fa-solid {
         }
     
         #self-image-frame {
-            position: relative;
             height: 250px;
             width: 250px;
-            margin: 50 auto;
-            display: block;
-            top: 0;
-            left: 0;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             animation: spin-shadow 4s linear infinite; /* Apply the animation */
         }
     
@@ -215,20 +216,24 @@ nav .fa-solid {
         }
     
         .self-intro {
-            left: 0;
+
+
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: auto;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
+            flex-direction: column;
         }
     
         .self-image-section {
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex: 2;
+            min-height: 450px;
+            width: 100%;
         }
-
 
         .hero-section-contact {
             height: 20vh;
@@ -236,7 +241,7 @@ nav .fa-solid {
     
         /* About section */
         #about-section {
-            height: 80vh;  
+            height: 100vh;  
             margin-top: 1.2rem;
         }
     
@@ -244,6 +249,7 @@ nav .fa-solid {
             flex-direction: column;
             gap: 0;
             margin-top: -2.95rem;
+            background-color: yellow;
         }
     
         .section-pic-container img {
@@ -303,12 +309,13 @@ nav .fa-solid {
     /* About section */
 
     #about-section {
-        height: 75vh;  
+        height: 105vh;  
         padding-top: 0;
         margin-top: -0.8rem;
     }
 
     .section-container {
+        background-color: red;
         flex-direction: column;
         gap: 0;
         margin-top: -2.95rem;

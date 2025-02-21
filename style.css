@@ -140,10 +140,12 @@ nav li a:hover::before {
 }
 
 .hero-section-intro {
+    position: relative;
     display: flex;
     justify-content: center;
     height: 60vh;
 }
+
 
 .self-intro {
     position: relative;
