@@ -373,11 +373,109 @@ nav li a:hover::before {
 
 #projects-section {
     position: relative;
-    height: 90vh;
-    background: hsl(0, 2%, 9%);
-    color: white;
+    min-height: 90vh;
+    height: 100%;
+    background: hsl(0, 1%, 14%);
+}
+
+.project-container-title {
+    padding-top: 1em;
+    color: #fff;
     text-align: center;
 }
+
+.projects {
+    position: relative;
+    min-height: 70vh;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 20px;
+    padding: 80px;
+}
+
+.project-one {
+    background: #e9e7e7;
+    border: 1px solid #6c6c6c;
+    border-radius: 20px;
+    min-height: 600px;
+    transition: scale 0.5s;
+    box-shadow: 10px 10px 19px #464646;
+}
+
+.project-one:hover {
+    scale: 1.02;
+}
+
+.project-image {
+    background: url(images/project-spreadsheet-app.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin: 20px 20px;
+    border-radius: 20px;
+}
+
+.project-details {
+    height: 350px;
+    margin: 20px 20px;
+}
+
+.project-name {
+    margin-bottom: 15px;
+}
+
+.project-name h1 {
+    font-size: large;
+    color: #070707;
+}
+
+.languages-used {
+    display: flex;
+}
+
+.language-capsule {
+    background-color: #efc564;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.language-capsule p {
+    color: white;
+    font-weight: bold;
+}
+
+.project-description {
+    margin: 15px 0;
+    color: #171717;
+}
+
+.more-button {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more-button a {
+    width: fit-content;
+    background: #fff;
+    color: #efc564;
+    border-radius: 10px;
+    font-weight: 400;
+    padding: 5px 15px;
+    text-decoration: none;
+    border: 1px solid #efc564;
+}
+
+
+
+
+
+
 
 
 
