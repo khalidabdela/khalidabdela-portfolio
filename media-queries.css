@@ -293,12 +293,8 @@ nav .fa-solid {
     #hero-section {
         min-height: 82vh;
         height: 100%;
-        background-color: bisque;
     }
 
-    .hero-section-intro {
-        background-color: aliceblue;
-    }
 
     .self-intro {
         flex: 1.5;
