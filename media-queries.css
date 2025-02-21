@@ -308,14 +308,23 @@ nav .fa-solid {
     /* About section */
 
     #about-section {
-        height: 80vh; 
+        min-height: 80vh;
+        height: 100%; 
         padding-top: 0;
     }
 
     .section-container {
+        min-height: 75vh;
+        height: 100%;
+        position: relative;
         flex-direction: column;
         gap: 0;
-        margin-top: -2.95rem;
+        margin-top: 0;
+       }
+
+       .section-pic-container {
+        background-color: aqua;
+        height: 100%;
        }
 
        .about-details-container {
@@ -337,6 +346,7 @@ nav .fa-solid {
 
     .text-container p {
         padding-top: 2rem;
+        padding-bottom: 3rem;
         margin: 0 auto;
     }
 }
