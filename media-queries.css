@@ -363,9 +363,21 @@ nav .fa-solid {
     }
 
     /* About section */
+
+
     #about-section {
-        height: 70vh;  
+        min-height: 50vh;
+        height: 100%;
+        background-color: bisque;  
     }
+
+    .section-container {
+        min-height: 40vh;
+        height: 100%;
+        gap: 0;
+        margin-bottom: 10%;
+    }
+
 
     .text-container p {
         max-width: 70%;
@@ -374,12 +386,17 @@ nav .fa-solid {
 
     .section-pic-container {
         flex: 4;
-        height: 40vh;
+
     }
 
     .section-pic-container img{
-        height: 110%;
-        top: -8rem;
+        height: 470px;
+        top: -100px;
+    }
+
+    .about-container {
+        margin-bottom: 2rem;
+        margin-top: 10%;
     }
 }
 
