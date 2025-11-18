@@ -1,69 +1,15 @@
-// splash screen
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-window.addEventListener("load", () => {
-  this.setTimeout(function() {
-    const loader = document.querySelector(".loader");
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("is-open");
+  });
 
-    loader.classList.add("loader-hidden");
-  
-    loader.addEventListener("transitionend", () => {
-      document.body.removeChild("loader");
-    })}, 2000); // slight delay in order to have splash screen playout
-});
-
-
-// hamburger menu
-var sidemenu = document.querySelector(".nav-links");
-
-function openmenu(){
-    sidemenu.style.right = "0";
-}
-
-function closemenu(){
-    sidemenu.style.right = "-350px";
-}
-
-
-// Contact section
-
-// adds/removes 'focus' to class name so the necessary styles can be implemented
-const inputs = document.querySelectorAll(".input");
-
-function focusFunc(){
-    let parent = this.parentNode;
-    parent.classList.add("focus");
-}
-
-function blurFunc(){
-    let parent = this.parentNode;
-    // only removes 'focus' class name if input area is empty
-    if (this.value == "") {
-        parent.classList.remove("focus");
+  // optional: close menu when clicking a link
+  navLinks.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      navLinks.classList.remove("is-open");
     }
+  });
 }
-
-inputs.forEach(input => {
-    input.addEventListener("focus", focusFunc);
-    input.addEventListener("blur", blurFunc);
-});
-
-
-/* Sending Message */
-const scriptURL =
-"https://script.google.com/macros/s/AKfycbyAXLxQt18QpK1xBG5ge-QrQBAOOud2sc3b9a6VKRf2bSnuJHRdc7Q8q00ctQ07jAUBDg/exec";
-const form = document.forms["submit-to-google-sheet"];
-const msg = document.getElementById("msg");
-
-form.addEventListener("submit", (e) => {
-e.preventDefault();
-fetch(scriptURL, { method: "POST", body: new FormData(form) })
-  .then((response) => {
-    msg.innerHTML = "Message sent successfully!";
-    setTimeout(function () {
-      msg.innerHTML = "";
-    }, 5000);
-    form.reset();
-  })
-  .catch((error) => console.error("Error!", error.message));
-});
-
