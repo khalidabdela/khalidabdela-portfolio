@@ -1,3 +1,76 @@
+/* ===== Hero ===== */
+/* Tablets (screen size <= 900px) */
+@media (max-width: 900px) {
+  .hero-dark-inner {
+  max-width: 900px;
+}
+
+.hero-dark-title {
+    font-size: clamp(3.5rem, 5vw, 5.2rem);
+}
+
+}
+
+/* Mobile (screen size <= 600px) */
+@media (max-width: 600px) {
+    .hero-dark-inner {
+  max-width: 600px;
+}
+
+.hero-dark-title {
+    font-size: clamp(2.5rem, 4vw, 4.2rem);
+}
+
+.hero-overlay {
+    height: 30px;   /* a bit slimmer */
+}
+
+/* left pill covers P-O-R-T */
+.hero-overlay--left {
+  width: 60%;      /* was 65% */
+  left: 0%;        /* instead of -15% */
+  bottom: 25%;
+}
+
+/* right pill covers F-O-L-I-O */
+.hero-overlay--right {
+  width: 40%;
+  right: -15%;       /* instead of -15% */
+  top: 42%;
+}
+
+.hero-year-pill {
+  position: absolute;
+  top: 4.2rem;
+  left: 1.5rem;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(244, 240, 223, 0.7);
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 0.45rem;
+}
+
+.hero-name-pill {
+  position: absolute;
+  right: -3.0rem;
+  bottom: 2.8rem;
+}
+
+.hero-name-dot {
+  width: 17px;
+  height: 17px;
+
+}
+
+.hero-name-text {
+    height: 7px;
+    font-size: 0.6rem;
+}
+}
+
+
+
 /* ===== Nav ===== */
 
 @media (max-width: 768px) {
