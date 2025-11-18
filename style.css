@@ -126,8 +126,10 @@ html, body {
   width: 30px;
   height: 30px;
   border-radius: 999px;
-  background: #f4f0df;
+  background: #07daed;
 }
+
+/* #f4f0df */
 
 .hero-name-text {
     position: relative;
