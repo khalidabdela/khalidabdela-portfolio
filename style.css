@@ -6,6 +6,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body {
+    overscroll-behavior-y: none;
+}
+
 
 /* ===== Dark hero base ===== */
 
